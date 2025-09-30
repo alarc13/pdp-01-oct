@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "VCR OSD Mono";
+  src: url(".fonts/VCROSDMono.woff2") format("woff2"),
+    url(".fonts/VCROSDMono.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #dfe7ef;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8rem;
+  background: url("images/background.jpg");
+  background-size: cover; /* se ajusta a toda la pantalla */
+}
+
+.container {
+  font-family: "VCR OSD Mono", sans-serif;
+
+  background: #b8c0ca;
+  width: 800px;
+  height: 926px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: transparent;
+  position: relative;
+}
+.tab {
+  background: #c7ced8;
+  padding: 0.5rem 1rem;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.tab.active {
+  background: #f2f3f5;
+  font-weight: bold;
+}
+
+/* Content */
+.content {
+  padding: 2rem;
+  display: none;
+}
+.content.active {
+  display: block;
+}
+
+/* Layout */
+/* .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+} */
+
+h1 {
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+}
+
+p {
+  font-family: "VCR OSD Mono", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Imagen */
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
